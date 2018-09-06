@@ -1,0 +1,14 @@
+Feature: Expense
+    As a user
+    I want to expense my money
+    so that I can expense my money
+
+Scenario Correct expense
+    Given a user with expanse 100 and account balance 200
+    When I expanse 100 with my account balance 200
+    Then I can expanse
+
+Scenario Incorrect expense
+    Given a user with expanse 100 and account balance 50
+    When I expanse 100 with my account balance 50
+    Then I can't expanse

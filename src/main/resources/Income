@@ -1,0 +1,15 @@
+Feature: income
+    As a User
+    I want to add money to account
+    so that i can add money to my account
+
+Scenario: Correct income
+    Given a user with money income 100
+    When I add income 100 to my account
+    Then I can add income to my acoount
+
+Scenario: Incorrect income
+    Given a user with money income -100
+    When I add income -100 to my account
+    Then I can't add income to my account
+
